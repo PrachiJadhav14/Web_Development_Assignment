@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <form action="">
+      <h1>Student Information</h1>
+       <label for="">Enter Student Full Name :</label>
+       <input type="text" name="" maxlength="20" minlength="10" pattern="[A-Za-z ]+" title="Please Enter Only Alphabets"><br><br>
+<!-- 
+       <label for="">Middle Name :</label>
+       <input type="text" name=""  maxlength="6" minlength="5"><br><br> -->
+       
+       <label for="">Student Mob No : </label>
+       <input type="text"  inputmode="numeric" name="" id="" maxlength="10" pattern="[6-9][0-9]{9}" required><br><br>
+
+       <label for="">Addmission Date</label>
+       <input type="datetime-local" name="" id="" required><br><br>
+
+       <label for="">Email :</label>
+       <input type="email" name="" pattern="a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z] {2,}" title="Please Enter Valid No" required><br><br>
+
+       <label for="">Course Selection :</label>
+       <select name="Course" id="" required>
+        <option value="">--Select Course--</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="HTMl">HTML</option>
+        <option value="CSS">CSS</option>
+       </select><br><br>
+
+       <label for="">Gender Selection : </label>
+       <label for="">
+       <input type="radio" name="Gender" value="male" required>Male
+      </label>
+      <label for="">
+        <input type="radio" name="Gender" value="Female" required>Female
+      </label>
+      <label for="">
+        <input type="radio" name="Gender" value="Other" required>Other
+      </label><br><br>
+    
+
+      <label for="">Pin Code</label>
+      <input type="text" inputmode="numeric" maxlength="6" name="" id="" pattern="[0,9]{6}"title="Enter 6 Digit Pin Code" required > <br><br>
+
+      <label for="">Age</label>
+      <input type="password" min="18" max="60">
+        <button>submit</button>
+    </form>
+</body>
+</html>
