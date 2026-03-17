@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Selector Program</title>
+    <style>
+        /* using Class Selector */
+        .para{
+            color: rgb(240, 243, 243);
+            background-color: rgb(31, 224, 109);
+            
+        }
+        /* using id Selector */
+        #para01{
+         color: brown;
+         background-color: cadetblue;
+        }
+        button{
+            margin: 5px;
+            background-color: rgb(211, 21, 81);
+            color: white;
+
+        }
+        /* using Pseudo Class */
+        button:hover{
+            color: rgb(158, 153, 163);
+        }
+        button:active{
+            color: rgb(222, 231, 230);
+            background-color: chartreuse;
+        }
+        p::first-letter{
+            color: rgb(81, 4, 4);
+            font-size: 20px;
+        }
+        /* Using  pseudo element  */
+        span::before{                            
+            content: "Hello, ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Combined Selector Program</h1>
+ <div class="para">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore similique dolor facere beatae expedita temporibus non qui nobis itaque, omnis vel quasi ea totam sint at quia veniam accusantium in inventore aliquam aut atque!
+ </div><br>
+ <div id="para01">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur ipsam optio dignissimos temporibus voluptate explicabo velit perspiciatis itaque dicta, in distinctio consequuntur vel iusto numquam quo. Eos modi iure neque error? Voluptatum consectetur beatae adipisci debitis, laborum doloribus reprehenderit perferendis? Velit, blanditiis. Obcaecati.
+ </div>
+ <button>Submit</button>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ipsum mollitia ipsa id tenetur porro possimus dicta aliquid quibusdam modi, deserunt, suscipit totam!</p>
+<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ratione ipsa rerum velit ad quam laboriosam veritatis nihil molestias doloribus quibusdam earum tempora animi, nisi aliquid architecto nemo exercitationem eaque officia in.</span>
+</body>
+</html>
