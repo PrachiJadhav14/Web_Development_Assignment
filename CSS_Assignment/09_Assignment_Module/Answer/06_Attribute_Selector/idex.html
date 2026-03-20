@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Attribute Selector (Advanced) </title>
+    <title> Attribute Selector </title>
+    <style>
+        body {
+            align-items: center;
+            justify-content: center;
+            /* height: 100vh; */
+            /* background-color: blueviolet; */
+            display: flex;
+            /* border: 1px solid rgb(230, 65, 65); */
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(167, 26, 111);
+            margin-bottom: 18px;
+            padding: 0;
+        }
+
+        input[type="text"] {
+            color: rgb(9, 20, 53);
+            background-color: rgb(237, 229, 229);
+            padding: 8px;
+            /* border: 2px solid black; */
+            font-size: 12px;
+            /* border: 1px solid red; */
+            color: rgb(86, 19, 3);
+        }
+
+        input[type="password"] {
+            color: rgb(9, 20, 53);
+            background-color: rgb(230, 226, 226);
+            padding: 8px;
+            /* border: 2px solid black; */
+            font-size: 12px;
+            /* border: 1px solid red; */
+            color: rgb(86, 19, 3);
+        }
+
+        input[type="email"] {
+            color: rgb(9, 20, 53);
+            background-color: rgb(230, 226, 226);
+            padding: 8px;
+            /* border: 2px solid black; */
+            font-size: 12px;
+            /* border: 1px solid red; */
+            color: rgb(86, 19, 3);
+        }
+
+        label {
+            margin-top: 5px;
+            color: rgb(39, 4, 74);
+        }
+
+        form {
+            padding: 8px;
+            /* border:1px solid #5c5b5b;  */
+            margin-top: 5px;
+            /* background-color:#fdfdfd; */
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        button {
+            background-color: rgb(88, 48, 234);
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <form action="">
+        <h1>Login Form</h1>
+        <label for="">UserRoll : </label>
+        <input type="text" id="text" name="name" placeholder="Enter Your Name" required><br><br>
+
+        <label for="">UserName : </label>
+        <input type="text" id="text" name="usernae" placeholder="Enter Youre UserName" required><br><br>
+
+        <label for="">Password :</label>
+        <input type="password" id="password" name="pasword" placeholder="Enter Youre Password" required><br><br>
+
+        <label>Email :</label>
+        <input type="email" id="email" name="email" placeholder="Enter Youre Email" required><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+
 </body>
+
 </html>
