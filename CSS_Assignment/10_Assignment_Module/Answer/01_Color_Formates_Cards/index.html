@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Formates</title>
+    <style>
+        body {
+            border: 1px solid black;
+            width: 600px;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 14px;
+            color: white;
+            width: 200px;
+            text-align: center;
+            background-color: rgb(164, 136, 179);
+            box-shadow: 0 6px 15px rgba(126, 21, 21, 0.2);
+            transition: 0.6s;
+            /* background-color: antiquewhite; */
+        }
+
+        .card:hover {
+            transform: translate(-8px) scale (1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0 , 0.3);
+
+
+        }
+      .card::before{
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -100%;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(120deg,transparent,rgba(255,255,255,0.4)),transparent;
+              transition: 0.6s;
+      }
+        .hex {
+            background-color: rgb(164, 136, 179);
+        }
+
+        .rgb {
+            background-color: rgb(164, 136, 179);
+        }
+
+        .rgba {
+            background-color: rgba(193, 137, 223, 0.6);
+            color: black;
+        }
+
+        button {
+            text-align: center;
+            background-color: rgb(57, 210, 31);
+            color: white;
+            align-items: center;
+            padding: 8px 12px;
+            margin-top: 10px;
+            width: 80px;
+            background-color: rgb(41, 235, 212);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+
+        .heading {
+            color: white;
+            background-color: rgb(60, 224, 95);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h5 class="heading">Fork Infosystem</h5>
+        <p>This is a simple card with some placeholder text.</p>
+        <button>Save</button>
+    </div>
+
+    <div class="card">
+        <h5 class="heading">Fork Infosystem</h5>
+        <p>This is a simple card with some placeholder text.</p>
+        <button>Save</button>
+    </div>
+    <div class="card">
+        <h5 class="heading">Fork Infosystem</h5>
+        <p>This is a simple card with some placeholder text.</p>
+        <button>Save</button>
+    </div>
+
+    <div class="card">
+        <h5 class="heading">Fork Infosystem</h5>
+        <p>This is a simple card with some placeholder text.</p>
+        <button>Save</button>
+    </div>
+    </div>
+</body>
+
+</html>

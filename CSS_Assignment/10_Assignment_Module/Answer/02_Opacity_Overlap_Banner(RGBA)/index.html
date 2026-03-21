@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity Overlap Banner (RGBA)</title>
+    <style>
+     body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+     }
+     .hero{
+        height: 100vh;
+        background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+     }
+     .hero::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+     }
+     .hero-content{
+        position:relative;
+        color: white;
+        text-align: center;
+     }
+    </style>
+</head>
+<body>
+    <!-- Create a hero section:
+ Background image
+ On top, a text box with rgba(0,0,0,0.5) overlay
+ Text should be readable  -->
+<section>
+   <div class="hero">
+    <div class="hero-content">
+        <h1>Welcome to My Website</h1>
+        <p>This is a beautiful hero section with overlay effect.</p>
+        <button>Get Started</button>
+    </div>
+</section>
+</body>
+</html>
